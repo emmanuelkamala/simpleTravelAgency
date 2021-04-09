@@ -2,11 +2,11 @@ const express = require('express');
 const router = express.Router();
 
 module.exports = function(){
-    router.use('/', (req, res) => {
+    router.get('/', (req, res) => {
         res.send('Index')
     })
 
-    router.use('/about', (req,res) => {
+    router.get('/about', (req,res) => {
         res.send('About Us')
     })
 
